@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#FF010000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#D3D3D3</color>
+    <color name="blue">#0000E5</color>
+    <color name="alert_btn_bg">#2d57c5</color>
+    <color name="alert_splash_bg">#EDF1F5</color>
+    <color name="alert_splash_dark_bg">#000000</color>
+    <color name="ic_launcher_background">#EDF1F5</color>
+    <color name="active_card_bg">#07bc23</color>
+    <color name="expired_card_bg">#2b2e2f</color>
+    <color name="expired_access_card">#c5c7c9</color>
+    <color name="access_card">#2156c5</color>
+    <color name="wavelynx_access_card">#224968</color>
+    <color name="hr_color">#e2e2e2</color>
+    <color name="self_service_color">#FFCCCB</color>
+    <color name="shimmer_color">#dddddd</color>
+    <color name="sso_text_color">#066815</color>
+    <color name="error_color">#FF0000</color>
+    <color name="temporary_card_bg">#FBBC04</color>
+    <color name="carbon_grey">#625D5D</color>
+</resources>

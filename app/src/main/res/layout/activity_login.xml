@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/sign_in_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/text_welcome_ae_header"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sign_in_sub_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_text"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/text_welcome_ae_sub_header"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/tenant_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_sub_text"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButtonTenant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:selectionRequired="true"
+            app:singleSelection="true" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tenant_input_layout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tenant_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="@string/prompt_tenant"
+        android:visibility="gone"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorText"
+        app:helperText="tenant.domain.com"
+        app:helperTextEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_business_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/environment_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_layout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tenant_input_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="@string/prompt_email"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorText"
+        app:startIconDrawable="@drawable/ic_baseline_person_outline_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="@string/prompt_password"
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorText"
+        app:startIconDrawable="@drawable/ic_baseline_password_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/remember_me"
+        style="@style/checkbox_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_layout"
+        android:layout_alignStart="@id/login_btn"
+        android:text="@string/prompt_remember_me"
+        android:textSize="17sp"
+        app:useMaterialThemeColors="true" />
+    <!--  TODO ::  if form is valid on Enter hide keyboard , initiate Login  :: Phase II -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        style="@style/MaterialButtonStyle"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/remember_me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:text="@string/action_sign_in"
+        android:textAllCaps="false"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:text="@string/forgot_password"
+        android:layout_marginRight="25dp"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/biometric_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:contentDescription="@string/biometrics"
+        android:src="@drawable/baseline_fingerprint_90" />
+
+    <TextView
+        android:id="@+id/powered_by_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alert_power_by"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/powered_by"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/alert_power_by"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/alert_power_by" />
+
+</RelativeLayout>
+
+
+

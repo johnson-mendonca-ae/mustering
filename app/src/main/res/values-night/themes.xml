@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MusteringApp" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorSecondary">@color/alert_btn_bg</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="colorError">@color/error_color</item>
+        <item name="android:textColor">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnTertiary">@color/black</item>
+        <item name="card_color">@color/white</item>
+        <!--button-->
+        <item name="button_background">@color/black</item>
+        <!--checkbox-->
+        <item name="checkbox_color">@color/grey</item>
+        <!-- drawables -->
+        <item name="east_drawable">@drawable/baseline_east_light24</item>
+        <item name="setting_drawable">@drawable/baseline_settings_light24</item>
+        <item name="web_asset_drawable">@drawable/baseline_web_asset_light24</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowSplashScreenBackground">@color/alert_splash_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/alert_power_by_bg</item>
+    </style>
+</resources>

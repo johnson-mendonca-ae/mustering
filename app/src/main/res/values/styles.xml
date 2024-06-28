@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <attr name="east_drawable" format="reference" />
+    <attr name="web_asset_drawable" format="reference" />
+    <attr name="setting_drawable" format="reference" />
+    <attr name="card_color" format="color" />
+    <attr name="button_background" format="color" />
+    <attr name="button_background_style" format="color" />
+    <attr name="checkbox_color" format="color" />
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="ProgressBarAccent">
+        <item name="colorAccent">@color/red</item>
+    </style>
+    <style name="checkbox_style" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/checkbox_color_state</item>
+    </style>
+    <style name="MaterialButtonStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/color_states_material_button</item>
+        <item name="strokeColor">@color/white</item>
+    </style>
+    <style name="ToastCenter" parent="Theme.AppCompat.DayNight">
+        <item name="stTextBold">false</item>
+        <item name="stTextSize">16sp</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stColorBackground">#FA8128</item>
+        <item name="stLength">LONG</item>
+        <item name="stGravity">1</item>
+        <item name="stRadius">25dp</item>
+    </style>
+</resources>

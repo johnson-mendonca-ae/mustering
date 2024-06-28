@@ -1,0 +1,71 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MusteringApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/alert_btn_bg</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorError">@color/error_color</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/alert_btn_bg</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="card_color">@color/hr_color</item>
+        <item name="button_background">@color/hr_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>\
+        <item name="android:windowLightStatusBar">true</item>
+        <!--button-->
+        <item name="buttonStyle">@style/MaterialButtonStyle</item>
+        <!-- checkbox-->
+        <item name="checkbox_color">@color/black</item>
+        <!-- drawables -->
+        <item name="east_drawable">@drawable/baseline_east_24</item>
+        <item name="setting_drawable">@drawable/ic_baseline_settings_24</item>
+        <item name="web_asset_drawable">@drawable/baseline_web_asset_card_24</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowSplashScreenBackground">@color/alert_splash_bg</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/alert_power_by_bg</item>
+        <!-- Material3 attributes (needed if parent="Theme.MaterialComponents").
+        <item name="colorPrimaryInverse">@color/my_app_primary_inverse</item>
+        <item name="colorPrimaryContainer">@color/my_app_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/my_app_on_primary_container</item>
+        <item name="colorSecondaryContainer">@color/my_app_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/my_app_on_secondary_container</item>
+        <item name="colorTertiary">@color/my_app_tertiary</item>
+        <item name="colorOnTertiary">@color/my_app_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/my_app_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/my_app_on_tertiary_container</item>
+        <item name="colorSurfaceVariant">@color/my_app_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/my_app_on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/my_app_inverse_surface</item>
+        <item name="colorOnSurfaceInverse">@color/my_app_inverse_on_surface</item>
+        <item name="colorOutline">@color/my_app_outline</item>
+        <item name="colorErrorContainer">@color/my_app_error_container</item>
+        <item name="colorOnErrorContainer">@color/my_app_on_error_container</item>
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Material3.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Material3.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Material3.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Material3.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Material3.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Material3.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Material3.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Material3.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Material3.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Material3.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Material3.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Material3.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Material3.LabelSmall</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Material3.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Material3.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Material3.LargeComponent</item>
+         -->
+    </style>
+</resources>
